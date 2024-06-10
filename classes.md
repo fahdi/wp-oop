@@ -83,9 +83,6 @@ class MyClass {
         echo $this->property;
     }
 }
-
-$object = new MyClass('Hello, World!');
-$object->myMethod(); // Output: Hello, World!
 ?>
 ```
 
@@ -103,14 +100,7 @@ class MyClass {
     public function __construct($property) {
         $this->property = $property;
     }
-
-    public function myMethod() {
-        echo $this->property;
-    }
 }
-
-$object = new MyClass('Hello, World!');
-$object->myMethod(); // Output: Hello, World!
 ?>
 ```
 
@@ -232,9 +222,6 @@ class CustomWidget extends WP_Widget {
         echo $args['before_widget'];
         echo $args['before_title'] . apply_filters('widget_title', 'Custom Widget') . $args['after_title'];
         echo 'Hello, World!';
-       
-
-```markdown
         echo $args['after_widget'];
     }
 
